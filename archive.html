@@ -14,14 +14,13 @@
         .stats { text-align: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 10px; margin-bottom: 24px; font-size: 12px; color: rgba(255,255,255,0.5); }
         .stats span { color: #e8a0bf; font-weight: 600; font-size: 18px; }
         .entry-list { display: flex; flex-direction: column; gap: 10px; }
-        .entry { background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-radius: 12px; padding: 16px; text-decoration: none; display: block; border: 1px solid rgba(255,255,255,0.05); }
-        .entry:hover { border-color: rgba(232,160,191,0.3); }
-        .entry-date { font-size: 11px; color: #e8a0bf; margin-bottom: 6px; }
-        .entry-topic { font-size: 15px; font-weight: 600; color: #e8e8e8; }
-        .entry-summary { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 8px; }
+        .entry { background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-radius: 12px; padding: 16px; text-decoration: none; display: block; border: 1px solid rgba(255,255,255,0.05); transition: all 0.2s; }
+        .entry:hover { border-color: rgba(232,160,191,0.3); background: linear-gradient(135deg, #222 0%, #111 100%); }
+        .entry-date { font-size: 11px; color: #e8a0bf; margin-bottom: 6px; letter-spacing: 1px; }
+        .entry-topic { font-size: 15px; font-weight: 600; color: #e8e8e8; line-height: 1.5; }
+        .entry-summary { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 8px; line-height: 1.6; }
         .back-link { display: block; text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 13px; text-decoration: none; }
         .back-link:hover { color: #e8a0bf; }
-        .empty { text-align: center; padding: 60px 0; color: rgba(255,255,255,0.3); }
     </style>
 </head>
 <body>
@@ -30,15 +29,80 @@
             <div class="header-title">备孕小贴士</div>
             <div class="header-sub">历史回顾</div>
         </div>
-        <div class="stats">已推送 <span id="count">0</span> 篇</div>
-        <div class="entry-list" id="entry-list"><div class="empty">加载中……</div></div>
+        <div class="stats">已推送 <span>14</span> 篇备孕知识</div>
+        <div class="entry-list">
+            <a class="entry" href="by_2026-06-24.html">
+                <div class="entry-date">2026-06-24</div>
+                <div class="entry-topic">备孕甲状腺——藏在脖子里的「生育开关」</div>
+                <div class="entry-summary">甲状腺激素管排卵、着床和胎儿大脑发育。TSH控制在0.5-2.5，甲功早查早安心，小小血检给宝宝智力上第一道保险。</div>
+            </a>
+            <a class="entry" href="by_2026-06-23.html">
+                <div class="entry-date">2026-06-23</div>
+                <div class="entry-topic">备孕同房频率——不是越多越容易中，抓对时机才关键</div>
+                <div class="entry-summary">精子存活2-3天，卵子仅12-24小时。排卵期每1-2天一次正好，太多反而拉低质量。轻松比焦虑有效，两个人的事别一个人扛。</div>
+            </a>
+            <a class="entry" href="by_2026-06-22.html">
+                <div class="entry-date">2026-06-22</div>
+                <div class="entry-topic">备孕疫苗接种——风疹、乙肝、流感，为什么孕前就要打？</div>
+                <div class="entry-summary">备孕不光是吃叶酸、测排卵——提前查抗体、打疫苗，是给宝宝筑的第一道防火墙。</div>
+            </a>
+            <a class="entry" href="by_2026-06-21.html">
+                <div class="entry-date">2026-06-21</div>
+                <div class="entry-topic">备孕压力——越想怀上，越怀不上？</div>
+                <div class="entry-summary">压力通过皮质醇干扰HPO轴影响排卵，给身体松弛感反而更配合。备孕是走路不是冲刺，两个人一起放轻松。</div>
+            </a>
+            <a class="entry" href="by_2026-06-20.html">
+                <div class="entry-date">2026-06-20</div>
+                <div class="entry-topic">备孕期间烟酒咖啡——到底哪些要戒？</div>
+                <div class="entry-summary">酒要全戒、烟要早戒、咖啡要少喝——这三件事不是「做到最好」而是「守住底线」，给未来宝宝留出最好的土壤。</div>
+            </a>
+            <a class="entry" href="by_2026-06-19.html">
+                <div class="entry-date">2026-06-19</div>
+                <div class="entry-topic">备孕运动——动得太少还是太多？</div>
+                <div class="entry-summary">备孕运动不是比谁练得猛，而是比谁动得对。每周150分钟中等强度，身体舒适就是最好的标准。</div>
+            </a>
+            <a class="entry" href="by_2026-06-18.html">
+                <div class="entry-date">2026-06-18</div>
+                <div class="entry-topic">备孕体重管理——你的BMI达标了吗？</div>
+                <div class="entry-summary">备孕不是越瘦越好，也不是胖点无所谓。BMI 18.5-24是最佳「着陆区」，让身体以最舒适的状态迎接新生命。</div>
+            </a>
+            <a class="entry" href="by_2026-06-17.html">
+                <div class="entry-date">2026-06-17</div>
+                <div class="entry-topic">备孕作息——睡不好真的影响怀孕吗？</div>
+                <div class="entry-summary">好睡眠不是奢侈品，是备孕最好的「地基」。睡够了内分泌系统才正常运转，卵子和精子才有好环境生长。</div>
+            </a>
+            <a class="entry" href="by_2026-06-16.html">
+                <div class="entry-date">2026-06-16</div>
+                <div class="entry-topic">男性备孕，别只让太太一个人努力</div>
+                <div class="entry-summary">精子生成周期72-90天，男性因素占不孕不育约40%。备孕是两个人的团队赛，从今天开始一起行动。</div>
+            </a>
+            <a class="entry" href="by_2026-06-15.html">
+                <div class="entry-date">2026-06-15</div>
+                <div class="entry-topic">备孕营养——叶酸怎么补才对？</div>
+                <div class="entry-summary">叶酸不是怀上了才开始吃的事，提前3个月，夫妻一起吃，每天一片别偷懒。</div>
+            </a>
+            <a class="entry" href="by_2026-06-14.html">
+                <div class="entry-date">2026-06-14</div>
+                <div class="entry-topic">叶酸到底怎么补？从什么时候开始？补多少？</div>
+                <div class="entry-summary">备孕前3个月开始补，每天0.4mg，夫妻一起补。叶酸不是越多越好，遵医嘱才是关键。</div>
+            </a>
+            <a class="entry" href="by_2026-06-13.html">
+                <div class="entry-date">2026-06-13</div>
+                <div class="entry-topic">男性备孕——别光让老婆努力，老公也得动起来</div>
+                <div class="entry-summary">精子生成周期72-90天，戒烟戒酒、补充锌硒、适度运动，备孕是两个人的事。</div>
+            </a>
+            <a class="entry" href="by_2026-06-12.html">
+                <div class="entry-date">2026-06-12</div>
+                <div class="entry-topic">如何精准找到排卵期？别再只靠App了</div>
+                <div class="entry-summary">排卵期不是猜出来的，用基础体温+排卵试纸双验证，把握强阳后的黄金24小时。</div>
+            </a>
+            <a class="entry" href="by_2026-06-11.html">
+                <div class="entry-date">2026-06-11</div>
+                <div class="entry-topic">备孕前需要做哪些检查？备孕必备清单</div>
+                <div class="entry-summary">备孕前3-6个月开始做孕前检查、调整生活方式、补充叶酸，是优生优育的第一步。</div>
+            </a>
+        </div>
         <a href="index.html" class="back-link">← 返回今日推送</a>
     </div>
-    <script>
-    fetch('data.json').then(r=>r.json()).then(d=>{
-        document.getElementById('count').textContent=d.length;
-        document.getElementById('entry-list').innerHTML=d.length?d.reverse().map(i=>`<a class="entry" href="${i.file}"><div class="entry-date">${i.date}</div><div class="entry-topic">${i.topic}</div><div class="entry-summary">${i.summary}</div></a>`).join(''):'<div class="empty">暂无历史记录</div>';
-    }).catch(()=>document.getElementById('entry-list').innerHTML='<div class="empty">暂无历史记录</div>');
-    </script>
 </body>
 </html>
