@@ -3,161 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>备孕小贴士 · 历史回顾</title>
+    <title>备孕知识 - 历史回顾</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #0a0a0a; min-height: 100vh; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #fff; }
-        .container { max-width: 420px; margin: 0 auto; }
-        .header { text-align: center; padding: 32px 0 24px; }
-        .header-title { font-size: 28px; font-weight: 700; letter-spacing: 2px; background: linear-gradient(180deg, #e8a0bf 0%, #c77d97 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .header-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 8px; }
-        .stats { text-align: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 10px; margin-bottom: 24px; font-size: 12px; color: rgba(255,255,255,0.5); }
-        .stats span { color: #e8a0bf; font-weight: 600; font-size: 18px; }
-        .entry-list { display: flex; flex-direction: column; gap: 10px; }
-        .entry { background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-radius: 12px; padding: 16px; text-decoration: none; display: block; border: 1px solid rgba(255,255,255,0.05); }
-        .entry:hover { border-color: rgba(232,160,191,0.3); background: linear-gradient(135deg, #222 0%, #111 100%); }
-        .entry-date { font-size: 11px; color: #e8a0bf; margin-bottom: 6px; letter-spacing: 1px; }
-        .entry-topic { font-size: 15px; font-weight: 600; color: #e8e8e8; line-height: 1.5; }
-        .entry-summary { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 8px; line-height: 1.6; }
-        .back-link { display: block; text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 13px; text-decoration: none; }
-        .back-link:hover { color: #e8a0bf; }
+        body {
+            background: #0a0a0a; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .card {
+            width: 420px; max-width: 100%; background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
+        }
+        .header {
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            padding: 24px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .tag { font-size: 10px; color: rgba(255,255,255,0.4); letter-spacing: 2px; margin-bottom: 8px; }
+        .title { font-size: 22px; font-weight: 700; color: #fff; letter-spacing: 3px; }
+        .count { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 6px; }
+        .list { padding: 20px; max-height: 500px; overflow-y: auto; }
+        .archive-item {
+            display: flex; align-items: baseline; gap: 12px; padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .archive-date { font-size: 12px; color: #e8a0bf; font-weight: 600; white-space: nowrap; min-width: 72px; }
+        .archive-link {
+            font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: none; line-height: 1.5;
+        }
+        .archive-link:hover { color: #e8a0bf; }
+        .back {
+            display: block; text-align: center; padding: 16px; color: #e8a0bf;
+            font-size: 13px; text-decoration: none; border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .back:hover { color: #fff; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <div class="header">
-            <div class="header-title">备孕小贴士</div>
-            <div class="header-sub">历史回顾</div>
+            <div class="tag">ARCHIVE</div>
+            <div class="title">备孕知识 · 往期回顾</div>
+            <div class="count">共 26 篇</div>
         </div>
-        <div class="stats">已推送 <span>25</span> 篇备孕知识</div>
-        <div class="entry-list">
-            <a class="entry" href="by_2026-07-05.html">
-                <div class="entry-date">2026-07-05</div>
-                <div class="entry-topic">肌醇——PCOS备孕的「黄金营养素」</div>
-                <div class="entry-summary">肌醇是胰岛素信号的第二信使，对PCOS伴胰岛素抵抗女性尤其关键。MI:DCI=40:1配比补充3-6个月，不少女性不需要促排也能恢复自然排卵——给身体时间和它需要的原料。</div>
-            </a>
-            <a class="entry" href="by_2026-07-04.html">
-                <div class="entry-date">2026-07-04</div>
-                <div class="entry-topic">环境内分泌干扰物——藏在你身边的「激素小偷」</div>
-                <div class="entry-summary">双酚A、邻苯二甲酸酯、PFAS等EDCs干扰激素信号，对PCOS备孕尤其需要警惕。换掉塑料水杯、少碰小票、选无香日用品，从今天的一个动作开始。</div>
-            </a>
-            <a class="entry" href="by_2026-07-03.html">
-                <div class="entry-date">2026-07-03</div>
-                <div class="entry-topic">维生素D——被低估的「生育维生素」</div>
-                <div class="entry-summary">维生素D受体遍布卵巢、内膜、胎盘，直接影响卵泡发育和着床。育龄女性VD缺乏率高达70-80%，先查25-羟VD再补D3，是最便宜高效的备孕「保险」。</div>
-            </a>
-            <a class="entry" href="by_2026-07-02.html">
-                <div class="entry-date">2026-07-02</div>
-                <div class="entry-topic">男性备孕——怀孕不是女方一个人的事</div>
-                <div class="entry-summary">怀孕是两个人的事。男方提前3个月调整生活方式+戒烟戒酒+查精液常规+补锌补硒。精子质量好不好，直接决定胚胎质量好不好。</div>
-            </a>
-            <a class="entry" href="by_2026-07-01.html">
-                <div class="entry-date">2026-07-01</div>
-                <div class="entry-topic">辅酶Q10——卵子质量的「充电宝」</div>
-                <div class="entry-summary">辅酶Q10给卵子线粒体充电，35岁后自然下降。泛醇形态吸收更好，连续补充3个月覆盖整个卵泡生长周期，是目前少数有循证支持的卵子质量改善补充剂。</div>
-            </a>
-            <a class="entry" href="by_2026-06-30.html">
-                <div class="entry-date">2026-06-30</div>
-                <div class="entry-topic">黄体功能与孕酮——排卵后的「后勤保障」</div>
-                <div class="entry-summary">排卵只是前半程，孕酮保障后半程。排卵后7天查孕酮、看基础体温高温天数——黄体好不好，决定胚胎有没有一张好床。PCOS备孕别只盯排卵，黄体也得查。</div>
-            </a>
-            <a class="entry" href="by_2026-06-29.html">
-                <div class="entry-date">2026-06-29</div>
-                <div class="entry-topic">B超监测排卵——最准的卵泡跟踪方法，PCOS备孕必备</div>
-                <div class="entry-summary">排卵试纸说你可能排了，B超说确实排了。对月经不规律的PCOS备孕来说，B超监测比盲目试半年有用得多。看清楚，再行动。</div>
-            </a>
-            <a class="entry" href="by_2026-06-28.html">
-                <div class="entry-date">2026-06-28</div>
-                <div class="entry-topic">AMH——你的卵巢储备还剩多少子弹？</div>
-                <div class="entry-summary">AMH是评估卵巢储备的黄金指标，PCOS患者AMH通常偏高——问题不在数量，在排卵流程。查清楚储备情况再针对性调理。</div>
-            </a>
-            <a class="entry" href="by_2026-06-27.html">
-                <div class="entry-date">2026-06-27</div>
-                <div class="entry-topic">PCOS的隐藏关卡——胰岛素抵抗，瘦多囊也不能忽视</div>
-                <div class="entry-summary">胰岛素抵抗不是胖子的专利，瘦多囊同样可能出现。OGTT糖耐量+胰岛素释放试验才能查清楚，低GI饮食+肌醇是自然改善方案。</div>
-            </a>
-            <a class="entry" href="by_2026-06-26.html">
-                <div class="entry-date">2026-06-26</div>
-                <div class="entry-topic">子宫内膜厚度——胚胎的「第一张床」</div>
-                <div class="entry-summary">内膜是胚胎着床的土壤，排卵期理想厚度8-14mm，A型三线征最佳。B超查内膜是最直接的窗口，别等到反复失败才想起来看土壤。</div>
-            </a>
-            <a class="entry" href="by_2026-06-25.html">
-                <div class="entry-date">2026-06-25</div>
-                <div class="entry-topic">多囊卵巢综合征（PCOS）与备孕——不是怀不上，是需要换个方法</div>
-                <div class="entry-summary">PCOS是育龄女性最常见内分泌疾病，核心是排卵障碍。体重减5%-10%效果不亚于促排药，低GI饮食+医生指导下绝大多数人都能成功怀孕。</div>
-            </a>
-            <a class="entry" href="by_2026-06-24.html">
-                <div class="entry-date">2026-06-24</div>
-                <div class="entry-topic">备孕甲状腺——藏在脖子里的「生育开关」</div>
-                <div class="entry-summary">甲状腺激素管排卵、着床和胎儿大脑发育。TSH控制在0.5-2.5，甲功早查早安心，小小血检给宝宝智力上第一道保险。</div>
-            </a>
-            <a class="entry" href="by_2026-06-23.html">
-                <div class="entry-date">2026-06-23</div>
-                <div class="entry-topic">备孕同房频率——不是越多越容易中，抓对时机才关键</div>
-                <div class="entry-summary">精子存活2-3天，卵子仅12-24小时。排卵期每1-2天一次正好，太多反而拉低质量。轻松比焦虑有效，两个人的事别一个人扛。</div>
-            </a>
-            <a class="entry" href="by_2026-06-22.html">
-                <div class="entry-date">2026-06-22</div>
-                <div class="entry-topic">备孕疫苗接种——风疹、乙肝、流感，为什么孕前就要打？</div>
-                <div class="entry-summary">备孕不光是吃叶酸、测排卵——提前查抗体、打疫苗，是给宝宝筑的第一道防火墙。</div>
-            </a>
-            <a class="entry" href="by_2026-06-21.html">
-                <div class="entry-date">2026-06-21</div>
-                <div class="entry-topic">备孕压力——越想怀上，越怀不上？</div>
-                <div class="entry-summary">压力通过皮质醇干扰HPO轴影响排卵，给身体松弛感反而更配合。备孕是走路不是冲刺，两个人一起放轻松。</div>
-            </a>
-            <a class="entry" href="by_2026-06-20.html">
-                <div class="entry-date">2026-06-20</div>
-                <div class="entry-topic">备孕期间烟酒咖啡——到底哪些要戒？</div>
-                <div class="entry-summary">酒要全戒、烟要早戒、咖啡要少喝——这三件事不是「做到最好」而是「守住底线」，给未来宝宝留出最好的土壤。</div>
-            </a>
-            <a class="entry" href="by_2026-06-19.html">
-                <div class="entry-date">2026-06-19</div>
-                <div class="entry-topic">备孕运动——动得太少还是太多？</div>
-                <div class="entry-summary">备孕运动不是比谁练得猛，而是比谁动得对。每周150分钟中等强度，身体舒适就是最好的标准。</div>
-            </a>
-            <a class="entry" href="by_2026-06-18.html">
-                <div class="entry-date">2026-06-18</div>
-                <div class="entry-topic">备孕体重管理——你的BMI达标了吗？</div>
-                <div class="entry-summary">备孕不是越瘦越好，也不是胖点无所谓。BMI 18.5-24是最佳「着陆区」，让身体以最舒适的状态迎接新生命。</div>
-            </a>
-            <a class="entry" href="by_2026-06-17.html">
-                <div class="entry-date">2026-06-17</div>
-                <div class="entry-topic">备孕作息——睡不好真的影响怀孕吗？</div>
-                <div class="entry-summary">好睡眠不是奢侈品，是备孕最好的「地基」。睡够了内分泌系统才正常运转，卵子和精子才有好环境生长。</div>
-            </a>
-            <a class="entry" href="by_2026-06-16.html">
-                <div class="entry-date">2026-06-16</div>
-                <div class="entry-topic">男性备孕，别只让太太一个人努力</div>
-                <div class="entry-summary">精子生成周期72-90天，男性因素占不孕不育约40%。备孕是两个人的团队赛，从今天开始一起行动。</div>
-            </a>
-            <a class="entry" href="by_2026-06-15.html">
-                <div class="entry-date">2026-06-15</div>
-                <div class="entry-topic">备孕营养——叶酸怎么补才对？</div>
-                <div class="entry-summary">叶酸不是怀上了才开始吃的事，提前3个月，夫妻一起吃，每天一片别偷懒。</div>
-            </a>
-            <a class="entry" href="by_2026-06-14.html">
-                <div class="entry-date">2026-06-14</div>
-                <div class="entry-topic">叶酸到底怎么补？从什么时候开始？补多少？</div>
-                <div class="entry-summary">备孕前3个月开始补，每天0.4mg，夫妻一起补。叶酸不是越多越好，遵医嘱才是关键。</div>
-            </a>
-            <a class="entry" href="by_2026-06-13.html">
-                <div class="entry-date">2026-06-13</div>
-                <div class="entry-topic">男性备孕——别光让老婆努力，老公也得动起来</div>
-                <div class="entry-summary">精子生成周期72-90天，戒烟戒酒、补充锌硒、适度运动，备孕是两个人的事。</div>
-            </a>
-            <a class="entry" href="by_2026-06-12.html">
-                <div class="entry-date">2026-06-12</div>
-                <div class="entry-topic">如何精准找到排卵期？别再只靠App了</div>
-                <div class="entry-summary">排卵期不是猜出来的，用基础体温+排卵试纸双验证，把握强阳后的黄金24小时。</div>
-            </a>
-            <a class="entry" href="by_2026-06-11.html">
-                <div class="entry-date">2026-06-11</div>
-                <div class="entry-topic">备孕前需要做哪些检查？备孕必备清单</div>
-                <div class="entry-summary">备孕前3-6个月开始做孕前检查、调整生活方式、补充叶酸，是优生优育的第一步。</div>
-            </a>
-        </div>
-        <a href="index.html" class="back-link">← 返回今日推送</a>
+        <div class="list">
+      <div class="archive-item">
+        <span class="archive-date">2026-07-06</span>
+        <a class="archive-link" href="by_2026-07-06.html">高龄备孕（35+）——不是不能生，是得更聪明地备</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-07-05</span>
+        <a class="archive-link" href="by_2026-07-05.html">肌醇——PCOS备孕的「黄金营养素」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-07-04</span>
+        <a class="archive-link" href="by_2026-07-04.html">环境内分泌干扰物——藏在你身边的「激素小偷」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-07-03</span>
+        <a class="archive-link" href="by_2026-07-03.html">维生素D——被低估的「生育维生素」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-07-02</span>
+        <a class="archive-link" href="by_2026-07-02.html">男性备孕——怀孕不是女方一个人的事</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-07-01</span>
+        <a class="archive-link" href="by_2026-07-01.html">辅酶Q10——卵子质量的「充电宝」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-30</span>
+        <a class="archive-link" href="by_2026-06-30.html">黄体功能与孕酮——排卵后的「后勤保障」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-29</span>
+        <a class="archive-link" href="by_2026-06-29.html">B超监测排卵——最准的卵泡跟踪方法，PCOS备孕必备</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-28</span>
+        <a class="archive-link" href="by_2026-06-28.html">AMH——你的卵巢储备还剩多少子弹？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-27</span>
+        <a class="archive-link" href="by_2026-06-27.html">PCOS的隐藏关卡——胰岛素抵抗，瘦多囊也不能忽视</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-26</span>
+        <a class="archive-link" href="by_2026-06-26.html">子宫内膜厚度——胚胎的「第一张床」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-25</span>
+        <a class="archive-link" href="by_2026-06-25.html">多囊卵巢综合征（PCOS）与备孕——不是怀不上，是需要换个方法</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-24</span>
+        <a class="archive-link" href="by_2026-06-24.html">备孕甲状腺——藏在脖子里的「生育开关」</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-23</span>
+        <a class="archive-link" href="by_2026-06-23.html">备孕同房频率——不是越多越容易中，抓对时机才关键</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-22</span>
+        <a class="archive-link" href="by_2026-06-22.html">备孕疫苗接种——风疹、乙肝、流感，为什么孕前就要打？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-21</span>
+        <a class="archive-link" href="by_2026-06-21.html">备孕压力——越想怀上，越怀不上？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-20</span>
+        <a class="archive-link" href="by_2026-06-20.html">备孕期间烟酒咖啡——到底哪些要戒？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-19</span>
+        <a class="archive-link" href="by_2026-06-19.html">备孕运动——动得太少还是太多？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-18</span>
+        <a class="archive-link" href="by_2026-06-18.html">备孕体重管理——你的BMI达标了吗？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-17</span>
+        <a class="archive-link" href="by_2026-06-17.html">备孕作息——睡不好真的影响怀孕吗？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-16</span>
+        <a class="archive-link" href="by_2026-06-16.html">男性备孕，别只让太太一个人努力</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-15</span>
+        <a class="archive-link" href="by_2026-06-15.html">备孕营养——叶酸怎么补才对？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-14</span>
+        <a class="archive-link" href="by_2026-06-14.html">叶酸到底怎么补？从什么时候开始？补多少？</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-13</span>
+        <a class="archive-link" href="by_2026-06-13.html">男性备孕——别光让老婆努力，老公也得动起来</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-12</span>
+        <a class="archive-link" href="by_2026-06-12.html">如何精准找到排卵期？别再只靠App了</a>
+      </div>
+      <div class="archive-item">
+        <span class="archive-date">2026-06-11</span>
+        <a class="archive-link" href="by_2026-06-11.html">备孕前需要做哪些检查？备孕必备清单</a>
+      </div>
+    </div>
+        <a class="back" href="index.html">← 返回今日小贴士</a>
     </div>
 </body>
 </html>
