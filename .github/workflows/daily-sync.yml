@@ -25,6 +25,9 @@ jobs:
       - name: Generate daily content
         run: python generate_daily.py
 
+      - name: Rebuild archive
+        run: python generate_archive.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
